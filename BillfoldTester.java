@@ -6,13 +6,9 @@ public class BillfoldTester {
 		DriversLicense driver2 = new DriversLicense("Joeseph", 1945);
 		CallingCard call = new CallingCard("Jotaro", 1292, 124510);
 		Billfold formating = new Billfold(id, driver);
-		Billfold summary = new Billfold(id, driver);
-
 		
 		formating.formatCards(id, call);
 		System.out.println("card is expired: " + call.isExpired(driver.getExpirationYear()));
-		System.out.println("number of expired cards: " + summary.getExpiredCardCount(driver2, driver));
-		
+		System.out.println("number of expired cards: " + formatting.getExpiredCardCount(driver2, driver));
 	}
-
 }
