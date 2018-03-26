@@ -12,8 +12,8 @@ public class CallingCard extends Card{
 		return super.isExpired(-1);
 	}
 	public String format() {
-		System.out.println("pin is: " + pin);
-		System.out.println("card number is: " + cardNumber);
+		System.out.println(super.getName() + "'s pin is: " + pin);
+		System.out.println(super.getName() + "'s card number is: " + cardNumber);
 		return super.format();
 	}
 	private int cardNumber;
