@@ -8,7 +8,7 @@ public class BillfoldTester {
 		Billfold formating = new Billfold(id, driver);
 		
 		formating.formatCards(id, call);
-		System.out.println("card is expired: " + call.isExpired(driver.getExpirationYear()));
+		System.out.println(driver.getName() + "'s card is expired: " + call.isExpired(driver.getExpirationYear()));
 		System.out.println("number of expired cards: " + formatting.getExpiredCardCount(driver2, driver));
 	}
 }
