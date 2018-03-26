@@ -8,7 +8,7 @@ public class DriversLicense extends Card {
 	}
 	
 	public String format() {
-		System.out.println("expiration year is: " + expirationYear);
+		System.out.println(super.getName() + "'s license expires in " + expirationYear);
 		return super.format();
 		
 	}
