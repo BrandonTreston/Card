@@ -11,7 +11,7 @@ public class IdCard extends Card{
 		return super.isExpired(-1);
 	}
 	public String format() {
-		System.out.println("ID number is: " + iD_Number);
+		System.out.println(super.getName() + "'s ID number is: " + iD_Number);
 		return super.format();
 		
 	}
